@@ -18,44 +18,43 @@ function init() {
             },
             {
                 type: 'input',
-                message: 'descrption',
+                message: 'Table of contents',
+                name: 'table',
+            },
+            {
+                type: 'input',
+                message: 'Descrption',
                 name: 'description',
             },
             {
                 type: 'input',
-                message: 'table of contents',
-                name: 'table',
-                
-            },
-            {
-                type: 'input',
-                message: 'installation',
+                message: 'Installation',
                 name: 'installation',
             },
             {
                 type: 'input',
-                message: 'usage information',
+                message: 'Usage information',
                 name: 'usage',
             },
             {
                 type: 'list',
-                message: 'license',
+                message: 'License',
                 name: 'license',
                 choices: ['Apache', 'Boost', 'MIT']
             },
             {
                 type: 'input',
-                message: 'contribution guideline',
+                message: 'Contribution guideline',
                 name: 'contributing',
             },
             {
                 type: 'input',
-                message: 'tests',
+                message: 'Tests',
                 name: 'tests',
             },
             {
                 type: 'input',
-                message: 'questions',
+                message: 'Questions',
                 name: 'questions',
             },
 

@@ -1,9 +1,0 @@
-# dasd
-# dfsgdf
-# fdg
-# fdg
-# fdg
-# MIT
-# dfgdfgfd
-# dfgdfg
-# dfgdfgfdg
