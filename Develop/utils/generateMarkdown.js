@@ -3,13 +3,13 @@
 function renderLicenseBadge(license) {
   switch (license) {
     case 'Apache':
-      return `[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)]`
+      return `![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)`
       break;
     case 'Boost':
-      return `[![License](https://img.shields.io/badge/License-Boost_1.0-lightblue.svg)]`
+      return `![License](https://img.shields.io/badge/License-Boost_1.0-lightblue.svg)`
       break;
     case 'MIT':
-      return `[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)]`
+      return `![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)`
       break;
     default:
       return ''
@@ -19,7 +19,7 @@ function renderLicenseBadge(license) {
 // TODO: Create a function that returns the license link
 // If there is no license, return an empty string
 function renderLicenseLink(license) {
-  switch (expression) {
+  switch (license) {
     case 'Apache':
       return `(https://opensource.org/licenses/Apache-2.0)`
       break;
@@ -50,10 +50,10 @@ function generateMarkdown(data) {
 ## Table of Content 
 ${data.table}
 
-- [Description](#Description)
+- [Description](#description)
 - [Installation](#installation)
 - [License](#license)
-- [Contributions](#Contributions)
+- [Contributing](#contributing)
 - [Tests](#tests)
 - [Questions](#questions)
 
@@ -68,9 +68,10 @@ ${data.usage}
 
 ## License 
 ${data.license}
+${renderLicenseLink(data.license)}
 
-## Contributions 
-${data.contributing}
+## Contributing 
+${data.Contributions}
 
 ## Tests 
 ${data.tests}

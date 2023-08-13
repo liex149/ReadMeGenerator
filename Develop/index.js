@@ -24,7 +24,7 @@ function init() {
             {
                 type: 'input',
                 message: 'Descrption',
-                name: 'description',
+                name: 'Description',
             },
             {
                 type: 'input',
@@ -44,8 +44,8 @@ function init() {
             },
             {
                 type: 'input',
-                message: 'Contribution guideline',
-                name: 'contributing',
+                message: 'Contributions',
+                name: 'Contributions',
             },
             {
                 type: 'input',
