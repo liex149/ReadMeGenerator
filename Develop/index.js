@@ -18,11 +18,6 @@ function init() {
             },
             {
                 type: 'input',
-                message: 'Table of contents',
-                name: 'table',
-            },
-            {
-                type: 'input',
                 message: 'Descrption',
                 name: 'Description',
             },
@@ -54,10 +49,15 @@ function init() {
             },
             {
                 type: 'input',
-                message: 'Questions',
+                message: 'What is your email address?',
                 name: 'questions',
             },
-
+            {
+                type: 'input',
+                message: 'What is your Github username?',
+                name: 'Github',
+            },
+            
         ])
 
         .then((response) =>

@@ -3,13 +3,13 @@
 function renderLicenseBadge(license) {
   switch (license) {
     case 'Apache':
-      return `![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)`
+      return `[<img src="https://img.shields.io/badge/License-Apache_2.0-blue.svg">]`
       break;
     case 'Boost':
-      return `![License](https://img.shields.io/badge/License-Boost_1.0-lightblue.svg)`
+      return `[<img src="https://img.shields.io/badge/License-Boost_1.0-lightblue.svg">]`
       break;
     case 'MIT':
-      return `![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)`
+      return `[<img src="https://img.shields.io/badge/License-MIT-yellow.svg">]`
       break;
     default:
       return ''
@@ -37,18 +37,20 @@ function renderLicenseLink(license) {
 // TODO: Create a function that returns the license section of README
 // If there is no license, return an empty string
 function renderLicenseSection(license) {
-
-
+if (license !== ''){
+  return `${license}`
+}else{
+  return '';
 }
+};
 
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
 
-  return `${renderLicenseBadge(data.license)}
+  return `${renderLicenseBadge(data.license)}${renderLicenseLink(data.license)}
   # ${data.Title}
 
 ## Table of Content 
-${data.table}
 
 - [Description](#description)
 - [Installation](#installation)
@@ -58,7 +60,7 @@ ${data.table}
 - [Questions](#questions)
 
 ## Description 
-${data.description}
+${data.Description}
 
 ## Installation 
 ${data.installation}
@@ -67,8 +69,7 @@ ${data.installation}
 ${data.usage}
 
 ## License 
-${data.license}
-${renderLicenseLink(data.license)}
+${renderLicenseSection(data.license)}
 
 ## Contributing 
 ${data.Contributions}
@@ -77,8 +78,8 @@ ${data.Contributions}
 ${data.tests}
 
 ## Questions 
-${data.questions}
-
+Email: ${data.questions} \n
+Github Profile: [Github](https://github.com/${data.Github})
 `;
 }
 
