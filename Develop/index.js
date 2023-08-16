@@ -63,7 +63,7 @@ function init() {
         .then((response) =>
 
             // TODO: Create a function to write README file
-            writeToFile(`${response.Title}.md`, markD(response))
+            writeToFile(`README.md`, markD(response))
         );
 }
 
